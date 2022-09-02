@@ -1,0 +1,16 @@
+#imagen-principal {
+    width: 400px;
+    height: 300px;
+}
+
+footer {
+    background-color: rgba(30, 30, 117, 0.815);
+}
+
+.btn-volver {
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: black;
+    padding: 10px;
+    color: aliceblue;
+}

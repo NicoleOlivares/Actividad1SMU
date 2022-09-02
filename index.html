@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parabrisas</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css" />
+
+</head>
+
+<body>
+    <!--Cabecera página-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#index">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="/visitanos.html">Visitanos!</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <h1>Parabrisas</h1>
+        <img id="imagen-principal" alt="Foto parabrisas" src="img/foto1.jpg" />
+        <p>Esto es un parrafo</p>
+    </main>
+
+    <section>
+        <form>
+            <h2 id="contacto">Contacto</h2>
+            <label for="nombre">Nombre</label>
+            <input type="text" value="" id="nombre" name="" />
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" value="" id="apellido" name="" />
+            <br>
+            <label for="correo">Correo</label>
+            <input type="email" value="" id="correo" name="" />
+            <br>
+            <label for="celular">Celular</label>
+            <input type="number" value="" id="celular" name="" />
+            <br>
+            <label for="empresa">Nombre Empresa</label>
+            <input type="text" value="" id="empresa" name="" />
+            <br>
+    
+            <!--Select-->
+            <label for="tipo-consulta">Tipo de consulta</label>
+            <select id="tipo-consulta" name="tipo-consulta">
+                <option value="0" selected>Seleccione un tipo de consulta</option>
+                <option value="1">Cotización personal</option>
+                <option value="2">Pregunta por modelo</option>
+                <option value="3">Cotización Empresa</option>
+                <option value="4">Otro</option>
+            </select>
+            <br>
+            <h2>Comentario</h2>
+            <!--area de texto-->
+            <!--maxlength limita el maximo de caracteres-->
+            <textarea id="textarea" name="textarea" cols="50" rows="5" placeholder="Agregar comentario..."
+                maxlength="250" minlength=""></textarea>
+            <br>
+            <button id="btn-enviar" type="button">Enviar</button>
+        </form>
+    </section>
+
+    <!--pie de página-->
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+</body>
+
+</html>
