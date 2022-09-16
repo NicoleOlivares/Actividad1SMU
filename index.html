@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Parabrisas</title>
+    <title>Inicio</title>
     <!--CSS-->
     <link rel="stylesheet" href="css/estilo.css" />
-
+    <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
     <!--Letra-->
@@ -34,25 +34,45 @@
         </nav>
 
         <form>
-            <input type="text" name="buscar" placeholder="Buscar..." />
+            <input type="text" name="buscar" placeholder="Buscar..." class="buscar" />
         </form>
     </header>
 
     <!--Cuerpo de página-->
-    <section class="cuerpo">
-        <h1>Parabrisas</h1>
-        <img id="imagen-principal" alt="Foto parabrisas" src="img/foto1.jpg" />
-        <p>Esto es un parrafo</p>
-    </section>
+    
 
+    <!--Slider-->
+    <section class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section"><img src="img/foto1.jpg" alt="" class="slider__img"></div>
+            <div class="slider__section"><img src="img/foto2.jpg" alt="" class="slider__img"></div>
+            <div class="slider__section"><img src="img/foto3.jpg" alt="" class="slider__img"></div>
+            <div class="slider__section"><img src="img/foto4.jpg" alt="" class="slider__img"></div>
+            <div class="slider__section"><img src="img/foto5.jpg" alt="" class="slider__img"></div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </section>
 
     <!--pie de página-->
     <footer>
+        <section>
+            <ul class="redes-sociales">
+                <li><a href="https://www.facebook.com/profile.php?id=100009923684013"><img id="facebook"
+                            alt="icon-facebook" src="img/facebook.png" /></a></li>
+                <li><a href="https://wa.me/+56990653186"><img id="whatsapp" alt="icon-whatsapp"
+                            src="img/whatsapp.png" /></a></li>
+                <li><a href="https://youtu.be/QTZIXShgbtw"><img id="youtube" alt="icon-youtube"
+                            src="img/youtube.png" /></a></li>
+            </ul>
+        </section>
+        <br />
         <p>&copy; Todos los derechos reservados.</p>
     </footer>
 
     <!--JS-->
     <script src="/js/menu-mobile.js"></script>
+    <script src="/js/slider.js"></script>
 </body>
 
 </html>

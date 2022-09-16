@@ -3,24 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Parabrisas</title>
+    <title>Contacto</title>
     <!--CSS-->
     <link rel="stylesheet" href="css/estilo.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--Letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <!--Cabecera página-->
     <header>
-        <a href="#" class="logo">Parabrisas</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <a href="/index.html" class="logo">Parabrisas</a>
 
-        <ul class="navbar">
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/nosotros.html">Nosotros</a></li>
-            <li><a href="/contacto.html">Contacto</a></li>
-            <li><a href="/visitanos.html">Visitanos!</a></li>
-        </ul>
+        <nav>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="navbar">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/campers.html">Campers</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="/visitanos.html">Visitanos!</a></li>
+            </ul>
+        </nav>
 
+        <form>
+            <input type="text" name="buscar" placeholder="Buscar..." class="buscar" />
+        </form>
     </header>
 
     <section>
@@ -51,7 +66,7 @@
                 <option value="3">Cotización Empresa</option>
                 <option value="4">Otro</option>
             </select>
-            <br>
+            <br />
             <h2>Comentario</h2>
             <!--area de texto-->
             <!--maxlength limita el maximo de caracteres-->
@@ -64,10 +79,19 @@
 
     <!--pie de página-->
     <footer>
-        <p>Pie de página</p>
+        <section>
+            <ul class="redes-sociales">
+                <li><a href="https://www.facebook.com/profile.php?id=100009923684013"><img id="facebook" alt="icon-facebook" src="img/facebook.png"/></a></li>
+                <li><a href="https://wa.me/+56990653186"><img id="whatsapp" alt="icon-whatsapp" src="img/whatsapp.png"/></a></li>
+                <li><a href="https://youtu.be/QTZIXShgbtw"><img id="youtube" alt="icon-youtube" src="img/youtube.png"/></a></li>
+            </ul>
+        </section>
+        <br />
+        <p>&copy; Todos los derechos reservados.</p>
     </footer>
+
     <!--JS-->
-    <script src="js/script.js"></script>
+    <script src="/js/menu-mobile.js"></script>
 </body>
 
 </html>

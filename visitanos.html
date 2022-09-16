@@ -1,71 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Visitanos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Visitanos!</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/formularioContacto.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+    <!--Letra-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
-    <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="/css/estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <!--Cabecera página-->
     <header>
         <a href="/index.html" class="logo">Parabrisas</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
 
-        <ul class="navbar">
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/nosotros.html">Nosotros</a></li>
-            <li><a href="/contacto.html">Contacto</a></li>
-            <li><a href="/visitanos.html">Visitanos!</a></li>
-        </ul>
+        <nav>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="navbar">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/campers.html">Campers</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="/visitanos.html">Visitanos!</a></li>
+            </ul>
+        </nav>
 
+        <form>
+            <input type="text" name="buscar" placeholder="Buscar..." class="buscar" />
+        </form>
     </header>
 
+    <!--Cuerpo-->
+    <section class="contact" id="contact">
+        <main class="contact-form">
+            <h2>Visitanos en:</h2>
+            <form action="">
+                <input type="correo" name="" id="" placeholder="Tu correo" required>
+                <br />
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje" required></textarea>
+                <input type="submit" name="" value="Enviar" class="send">
+            </form>
+        </main>
 
-    <div class="container">
-        <h1>Visitanos</h1>
-        <p>
-            Nos encontramos en:
-        </p>
-        <div class="row">
-            <div class="col-6">
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-70.65898239612581%2C-33.44690300401264%2C-70.65396130084993%2C-33.44375628093185&amp;layer=mapnik"
-                    style="border: 1px solid black"></iframe><br /><small><a
-                        href="https://www.openstreetmap.org/#map=18/-33.44533/-70.65647">Ver mapa más grande</a></small>
+        <aside class="contact-img">
+            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-70.65898239612581%2C-33.44690300401264%2C-70.65396130084993%2C-33.44375628093185&amp;layer=mapnik"
+                style="border: 1px solid black"></iframe><br /><small>
+                <a href="https://www.openstreetmap.org/#map=18/-33.44533/-70.65647">Ver mapa más grande</a></small>
+        </aside>
+    </section>
 
-            </div>
-            <div class="col-6">
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Correo: </label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje: </label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <button id="btn-contacto" type="button" class="btn btn-primary">Enviar Mensaje</button>
-                </form>
-            </div>
-        </div>
-    </div>
+    <!--pie de página-->
+    <footer>
+        <div>
+            <ul class="redes-sociales">
+                <li><a href="https://www.facebook.com/profile.php?id=100009923684013"><img id="facebook" alt="icon-facebook" src="img/facebook.png"/></a></li>
+                <li><a href="https://wa.me/+56990653186"><img id="whatsapp" alt="icon-whatsapp" src="img/whatsapp.png"/></a></li>
+                <li><a href="https://youtu.be/QTZIXShgbtw"><img id="youtube" alt="icon-youtube" src="img/youtube.png"/></a></li>
+            </ul>
+        </div> 
+        <br />
+        <p>&copy; Todos los derechos reservados.</p>
+    </footer>
 
-    <div id="pie-pagina"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+    <!--JS-->
+    <script src="/js/menu-mobile.js"></script>
 
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/script-contacto.js"></script>

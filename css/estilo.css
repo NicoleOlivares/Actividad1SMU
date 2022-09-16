@@ -9,16 +9,16 @@
 }
 
 :root {
-    /*#f9004d*/
+    /*#f9004d  rgba(30, 30, 117, 0.815)*/
     --bg-color: #101010;
     --secound-bg-color: #191919;
     --text-color: #fff;
     --secound-color: #c6c9d8bf;
-    --main-color: rgba(30, 30, 117, 0.815);
+    --main-color:#002395;
     --big-font: 5.3rem;
     --h2-font: 4.2rem;
     --p-font: 1.1rem;
-    
+
 }
 
 body {
@@ -67,7 +67,7 @@ body {
     border-radius: 30px;
 }
 
-form input {
+form input.buscar {
     padding: 10px;
     border: none;
     outline: none;
@@ -102,12 +102,55 @@ section.cuerpo {
     margin: 0 auto;
 }
 
+section.cuerpo-mapa {
+    display: flex;
+}
+
+aside {
+    text-align: center;
+    flex: 3;
+}
+
+aside a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+}
+
+main {
+    flex: 3;
+}
+
+.titulo-slide {
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2;
+    text-align: center;
+}
+
 /*### FOOTER ###*/
 footer {
     text-align: center;
     background: var(--secound-bg-color);
-    padding: 34px;
+    padding: 24px;
 }
+
+
+
+.redes-sociales li a img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 footer p {
     font-size: 17px;
@@ -120,6 +163,13 @@ footer p {
         padding: 18px 4%;
         transition: .2s;
     }
+
+    :root {
+        --big-font: 4.8rem;
+        --h2-font: 3.8rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
 }
 
 @media (max-width: 990px) {
@@ -127,9 +177,13 @@ footer p {
         display: initial;
     }
 
+    header {
+        position: relative;
+    }
+
     .navbar {
-        position: absolute;
         top: -700px;
+        position: absolute;
         left: 0;
         right: 0;
         flex-direction: column;
@@ -147,10 +201,7 @@ footer p {
 
     .navbar a:hover {
         background: var(--main-color);
-    }
-
-    .navbar a::after {
-        display: none;
+        border-radius: 0px;
     }
 
     .navbar.active {

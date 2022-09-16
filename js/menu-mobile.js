@@ -1,11 +1,12 @@
-document.addEventListener("DOMContentLoaded", (e) => {
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-    document.querySelector("button.btn-menu-mobile").addEventListener("click", (be) => {
-        document.getElementById("menu-mobile").style.display = "block"; 
-    });
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
 
-    document.querySelector("button.menu-mobile-close").addEventListener("click", (be) => {
-        document.getElementById("menu-mobile").style.display = "none"; 
-    });
-    
-});
+window.onscroll = () => {
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('active');
+}
