@@ -22,7 +22,7 @@
 
 11. El proyecto debe ser expuesto y funcional a través de Github Pages.
 
-##Actividad 3
+## Actividad 3
 Desarrolle de manera individual o en parejas un sitio web de tema libre que contemple al menos lo siguiente:
 
 1. Al menos 5 páginas HTML (ej. Inicio, Toma de Horas, Nosotros, Suscripciones, Biografía, Contacto, Bibliografía, Galería de Imágenes, Videos, etc). Utilice como mínimo las siguientes etiquetas: de título (h1..h6), div, main, header, footer, img, p, form, input, option, select, button, table y video.
