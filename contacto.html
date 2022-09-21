@@ -6,7 +6,7 @@
     <title>Contacto</title>
     <!--CSS-->
     <link rel="stylesheet" href="css/estilo.css" />
-
+    <link rel="stylesheet" href="css/contacto.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
     <!--Letra-->
@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -38,23 +37,24 @@
         </form>
     </header>
 
-    <section>
-        <form>
+    <section class="form">
+        <form action="#" method="get">
             <h2 id="contacto">Contacto</h2>
+            <br />
             <label for="nombre">Nombre</label>
-            <input type="text" value="" id="nombre" name="" />
+            <input type="text" id="nombre" name="nombre" />
             <br>
             <label for="apellido">Apellido</label>
-            <input type="text" value="" id="apellido" name="" />
+            <input type="text" id="apellido" name="apellido" />
             <br>
             <label for="correo">Correo</label>
-            <input type="email" value="" id="correo" name="" />
+            <input type="email" id="correo" name="correo" />
             <br>
             <label for="celular">Celular</label>
-            <input type="number" value="" id="celular" name="" />
+            <input type="number" id="celular" name="celular" />
             <br>
             <label for="empresa">Nombre Empresa</label>
-            <input type="text" value="" id="empresa" name="" />
+            <input type="text" id="empresa" name="empresa" />
             <br>
 
             <!--Select-->
@@ -66,8 +66,10 @@
                 <option value="3">Cotización Empresa</option>
                 <option value="4">Otro</option>
             </select>
+            <hr />
             <br />
             <h2>Comentario</h2>
+            <br />
             <!--area de texto-->
             <!--maxlength limita el maximo de caracteres-->
             <textarea id="textarea" name="textarea" cols="50" rows="5" placeholder="Agregar comentario..."
@@ -76,20 +78,24 @@
             <button id="btn-enviar" type="button">Enviar</button>
         </form>
     </section>
-
     <!--pie de página-->
     <footer>
-            <ul class="redes-sociales">
-                <li><a href="https://www.facebook.com/profile.php?id=100009923684013"><img id="facebook" alt="icon-facebook" src="img/facebook.png"/></a></li>
-                <li><a href="https://wa.me/+56990653186"><img id="whatsapp" alt="icon-whatsapp" src="img/whatsapp.png"/></a></li>
-                <li><a href="https://youtu.be/QTZIXShgbtw"><img id="youtube" alt="icon-youtube" src="img/youtube.png"/></a></li>
-            </ul>
+        <ul class="redes-sociales">
+            <li><a href="https://www.facebook.com/profile.php?id=100009923684013"><img id="facebook" alt="icon-facebook"
+                        src="img/facebook.png" /></a></li>
+            <li><a href="https://wa.me/+56990653186"><img id="whatsapp" alt="icon-whatsapp"
+                        src="img/whatsapp.png" /></a></li>
+            <li><a href="https://youtu.be/QTZIXShgbtw"><img id="youtube" alt="icon-youtube" src="img/youtube.png" /></a>
+            </li>
+        </ul>
         <br />
         <p>&copy; Todos los derechos reservados.</p>
     </footer>
 
     <!--JS-->
     <script src="./js/menu-mobile.js"></script>
+    <script src="./js/form-contacto.js"></script>
+
 </body>
 
 </html>

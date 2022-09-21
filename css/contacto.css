@@ -1,0 +1,47 @@
+.form {
+    margin: 15px auto;
+    background: var(--secound-bg-color);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+textarea {
+    resize: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+}
+
+section form input, #tipo-consulta {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+section form button {
+    margin-top: 10px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    width: 160px;
+    transition: ease .35s;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-left: 25%;
+}
+
+section form button:hover {
+    background-color: var(--secound-color);
+    cursor: pointer;
+}
+
+
